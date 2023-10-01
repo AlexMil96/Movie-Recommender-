@@ -1,0 +1,7 @@
+Recommender system, consisting of 4 parts
+1. Preprocessing, where I preprocess the MovieLens dataset and add more features from other datasets, such as TMDB5000.
+2. Model, where the training is taking place. For training, I used 2 individual neural networks, one for the user features and the second for the item features. Both neural 	networks output a 32x1 vector. Then, I calculate the dot product of the vector and that is the rating prediction r(i,j) for user i and movie j.
+3. API, which receives the trained model and calculates the recommendations for new users.
+4. GUI, which receives the rated movies by a new users and then displays the recommendations, after communication with the API.
+
+To run the recommender, first execute api.ipynb and then gui.ipynb
